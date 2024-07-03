@@ -142,10 +142,6 @@ where EXTRACT(YEAR FROM "Date") = 2021
         
 
 
-
-
-
-
 --•	YOY Growth in Cars Sold
 
 WITH YTD_Cars AS (
@@ -177,28 +173,54 @@ FROM
 
 
 
-Here is our master updated
+
 
 --Problem Statement 2: Charts Requirement
-
-1.	YTD Sales Weekly Trend: Display a line chart illustrating the weekly trend of YTD sales. The X-axis should represent weeks, and the Y-axis should show the total sales amount.
-2.	YTD Total Sales by Body Style: Visualize the distribution of YTD total sales across different car body styles using a Pie chart.
-3.	YTD Total Sales by Color: Present the contribution of various car colors to the YTD total sales through a donut chart.
-4.	YTD Cars Sold by Dealer Region: Showcase the YTD sales data based on different dealer regions using a bar chart to visualize the sales distribution geographically.
-5.	Company-Wise Sales Trend in Grid Form: Provide a tabular grid that displays the sales trend for each company. The grid should showcase the company name along with their YTD sales figures.
+-- This will covered also PostgreSQL, Later we will use tableau for visualization.
 
 
+--1.	YTD Sales Weekly Trend: Display a line chart illustrating the weekly trend of YTD sales. The X-axis should represent weeks, 
+--      and the Y-axis should show the total sales amount.
+
+select EXTRACT(weeks from "Date") as week, sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY week
+order by week desc
+
+--2.	YTD Total Sales by Body Style: Visualize the distribution of YTD total sales across different car body styles using a Pie chart.
+
+SELECT  "Body Style", sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY "Body Style"
+order by total_sales desc
 
 
 
+--3.	YTD Total Sales by Color: Present the contribution of various car colors to the YTD total sales through a donut chart.
+
+select  "Color" , sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY "Color"
+order by total_sales desc
 
 
+--4.	YTD Cars Sold by Dealer Region: Showcase the YTD sales data based on different dealer regions using a bar chart to visualize the sales distribution geographically.
+select  "Dealer_Region" , sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY "Dealer_Region"
+order by total_sales desc
 
-(371185120.0Million) into 271.185M
-
-SELECT CONCAT(ROUND(amount_in_millions, 1), ' million') AS amount_formatted
-FROM your_table_name;
-
+--5.	Company-Wise Sales Trend in Grid Form: Provide a tabular grid that displays the sales trend for each company. The grid should showcase the company name along with their YTD sales figures.
+select  "Company" , sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY "Company"
+order by total_sales desc
+Limit 5
 
 
 
