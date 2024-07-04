@@ -40,7 +40,7 @@ Due to The dashboard should provide real-time insights into key performance indi
 ## 1.	Sales Overview:
 
 •	Year-to-Date (YTD) Total Sales
-```
+```sql
 SELECT 
     CONCAT(ROUND(SUM("Price") / 1000000.0, 3), 'M') AS YTD_SALES
 FROM 
@@ -51,7 +51,14 @@ WHERE
 
 
 •	Year-over-Year (YOY) Growth in Total Sales
-
+```sql
+SELECT 
+    CONCAT(ROUND(SUM("Price") / 1000000.0, 3), 'M') AS YOY_SALES
+FROM 
+    car_sales_data
+WHERE 
+    EXTRACT(YEAR FROM "Date") = 2020;
+```
 
 
 2.	Average Price Analysis:
