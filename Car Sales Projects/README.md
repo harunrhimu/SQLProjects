@@ -61,15 +61,60 @@ WHERE
 ```
 
 
-2.	Average Price Analysis:
-
-
+# 2.	Average Price Analysis:
 •	YTD Average Price
+```sql
 
+----•	YTD Average Price which is YTD_total_sales / YTD_car_sold
+--Car sold is nothing but count(Car_id)
+WITH YTD_SALESS as ( 
+SELECT 
+    SUM("Price")  AS YTD_SALES
+FROM 
+    car_sales_data
+WHERE 
+    EXTRACT(YEAR FROM "Date") = 2021
+),
+YTD_car_sold as (
+SELECT 
+    count("Car_id") as Total_car_sold
+FROM 
+    car_sales_data
+WHERE 
+    EXTRACT(YEAR FROM "Date") = 2021
+)
+SELECT YTD_SALES / Total_car_sold
+FROM YTD_SALESS, YTD_car_sold
+```
 
 
 •	YOY Growth in Average Price
+```sql 
 
+WITH  YTD_avg AS (
+
+SELECT 
+    ROUND(avg("Price"),2) AS YTD_avg_price
+FROM 
+    car_sales_data
+WHERE 
+    EXTRACT(YEAR FROM "Date") = 2021
+), 
+
+PYTD_avg AS (
+
+SELECT 
+    round(avg("Price"),2) AS PYTD_avg_SALES
+FROM 
+    car_sales_data
+WHERE 
+    EXTRACT(YEAR FROM "Date") = 2020
+)
+
+SELECT YTD_avg_price, PYTD_avg_SALES, 
+(YTD_avg_price -PYTD_avg_SALES) /PYTD_avg_SALES as YOY_AVG_GROWTH
+FROM YTD_avg, PYTD_avg;
+```
 
 
 ## 3.	Cars Sold Metrics:
