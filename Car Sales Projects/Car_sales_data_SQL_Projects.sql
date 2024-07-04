@@ -2,26 +2,12 @@
 */
 --To check any error present, Datatype, missing values
 SELECT * FROM car_sales_data
-select *
-from car_sales_data
-where 
 
 /*
-CASE 
-	WHEN EXTRACT(month from date) = 6 then 'June'
- 	WHEN EXTRACT(month from date) = 7 then 'July'
-	WHEN EXTRACT(month from date) = 8 then 'August'  
-END as month 
-
-*/
-
-
-select * from  car_sales_data csd 
-
 select CONCAT(ROUND(SUM("Price") / 1000000.0, 3), 'M') AS YTD_SALES 
 --CONCAT(ROUND(SUM("Price")
 from car_sales_data csd  
---where "Gender" = 'Female' 
+*/
 
 /* TABLEAU PROJECT
 CAR SALES DASHBOARD

@@ -39,9 +39,15 @@ The questions are illustrated below want to excute specific business problem in 
 Due to The dashboard should provide real-time insights into key performance indicators (KPIs) related to our sales data. This will enable us to make informed decisions, monitor our progress, and identify trends and opportunities for growth.
 ## 1.	Sales Overview:
 
-
 •	Year-to-Date (YTD) Total Sales
-
+```
+SELECT 
+    CONCAT(ROUND(SUM("Price") / 1000000.0, 3), 'M') AS YTD_SALES
+FROM 
+    car_sales_data
+WHERE 
+    EXTRACT(YEAR FROM "Date") = 2021
+```
 
 
 •	Year-over-Year (YOY) Growth in Total Sales
