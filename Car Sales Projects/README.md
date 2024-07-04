@@ -48,7 +48,9 @@ FROM
 WHERE 
     EXTRACT(YEAR FROM "Date") = 2021
 ```
+[{{(Here is Image and query description)}}]
 
+![Year-to-Date (YTD) Total Sales](assets/1_top_paying_roles.png)
 
 •	Year-over-Year (YOY) Growth in Total Sales
 ```sql
@@ -59,7 +61,9 @@ FROM
 WHERE 
     EXTRACT(YEAR FROM "Date") = 2020;
 ```
+[{{(Here is Image and query description)}}]
 
+![Year-over-Year (YOY) Growth in Total Sales](assets/1_top_paying_roles.png)
 
 # 2.	Average Price Analysis:
 •	YTD Average Price
@@ -86,7 +90,9 @@ WHERE
 SELECT YTD_SALES / Total_car_sold
 FROM YTD_SALESS, YTD_car_sold
 ```
+[{{(Here is Image and query description)}}]
 
+![Average Price Analysis](assets/1_top_paying_roles.png)
 
 •	YOY Growth in Average Price
 ```sql 
@@ -119,31 +125,94 @@ FROM YTD_avg, PYTD_avg;
 
 ## 3.	Cars Sold Metrics:
 •	YTD Cars Sold
+```sql 
+select count("Car_id") as YTD_Car_Sold
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
 
+```
 
 •	YOY Growth in Cars Sold
+```sql
+WITH YTD_Cars AS (
+    SELECT 
+        COUNT("Car_id") AS YTD_car_sold
+    FROM 
+        car_sales_data
+    WHERE 
+        EXTRACT(YEAR FROM "Date") = 2021
+), 
+PYTD_cars AS (
+    SELECT 
+        COUNT("Car_id") AS PYTD_Car_Sold
+    FROM 
+        car_sales_data
+    WHERE 
+        EXTRACT(YEAR FROM "Date") = 2020
+)
+SELECT 
+    YTD_car_sold, 
+    PYTD_Car_Sold, 
+    CASE 
+        WHEN PYTD_Car_Sold = 0 THEN NULL -- Avoid division by zero
+        ELSE (YTD_car_sold - PYTD_Car_Sold) / CAST(PYTD_Car_Sold AS FLOAT)
+    END AS YOY_car_sold_GROWTH
+FROM 
+    YTD_Cars, 
+    PYTD_cars;
 
-
-
+```
 
 
 # Problem Statement 2: Charts Requirement
 
 1.	YTD Sales Weekly Trend: Display a line chart illustrating the weekly trend of YTD sales. The X-axis should represent weeks, and the Y-axis should show the total sales amount.
+```sql
 
-
-
+select EXTRACT(weeks from "Date") as week, sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY week
+order by week desc
+```
 2.	YTD Total Sales by Body Style: Visualize the distribution of YTD total sales across different car body styles using a Pie chart.
+```sql
+SELECT  "Body Style", sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY "Body Style"
+order by total_sales desc
+
+
+```
 
 
 3.	YTD Total Sales by Color: Present the contribution of various car colors to the YTD total sales through a donut chart.
-
-
-
+```sql
+select  "Color" , sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY "Color"
+order by total_sales desc
+```
 
 4.	YTD Cars Sold by Dealer Region: Showcase the YTD sales data based on different dealer regions using a bar chart to visualize the sales distribution geographically.
-
-
+```sql
+select  "Dealer_Region" , sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY "Dealer_Region"
+order by total_sales desc
+```
 
 5.	Company-Wise Sales Trend in Grid Form: Provide a tabular grid that displays the sales trend for each company. The grid should showcase the company name along with their YTD sales figures.
+```sql
+select  "Company" , sum("Price") as total_sales
+from car_sales_data 
+where EXTRACT(YEAR FROM "Date") = 2021 
+GROUP BY "Company"
+order by total_sales desc
+Limit 5
+```
+
 
