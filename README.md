@@ -1,3 +1,3 @@
-# Every Projects Has own README Files where you can found all the projects.
+# Every Projects Has own README Files where you can find all the projects.
 
-## Check all of my project for details.
+## Check out all of my project for details.
