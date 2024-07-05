@@ -50,7 +50,7 @@ WHERE
 ```
 [{{(Here is Image and query description)}}]
 
-![Year-to-Date (YTD) Total Sales](assets/1_top_paying_roles.png)
+![Year-to-Date (YTD) Total Sales](SQLProjects/Car_Sales_Projects/assets/YTDAvgPrice&Growth .jpg)
 
 •	Year-over-Year (YOY) Growth in Total Sales
 ```sql
@@ -64,8 +64,7 @@ WHERE
 [{{(Here is Image and query description)}}]
 
 ![Year-over-Year (YOY) Growth in Total Sales](assets/YTDTotalSales&Growth.jpg)
-*Explain after images. This barh is generated from raw files in Tableau Public Application*
-SQLProjects\Car Sales Projects\YTD Avg Price & Growth .jpg
+
 
 # 2.	Average Price Analysis:
 •	YTD Average Price
