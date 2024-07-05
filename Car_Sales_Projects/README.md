@@ -61,7 +61,9 @@ WHERE
     EXTRACT(YEAR FROM "Date") = 2020;
 ```
 
-![Year-over-Year (YOY) Total Sales & Growth in Total Sales](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSales&Growth%20.jpg?raw=true)
+<p align="center">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSales&Growth%20.jpg?raw=true" alt="Year-over-Year (YOY) Total Sales & Growth in Total Sales">
+</p>
 
 
 # 2.	Average Price Analysis:
@@ -117,7 +119,9 @@ SELECT YTD_avg_price, PYTD_avg_SALES,
 (YTD_avg_price -PYTD_avg_SALES) /PYTD_avg_SALES as YOY_AVG_GROWTH
 FROM YTD_avg, PYTD_avg;
 ```
-![YTD average prica and growth](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDAvgPrice&Growth%20.jpg?raw=true)
+<p align="center">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDAvgPrice&Growth%20.jpg?raw=true" alt="YTD average price and growth">
+</p>
 
 
 
@@ -159,8 +163,9 @@ FROM
     YTD_Cars, 
     PYTD_cars;
 ```
-![YTD Cars Sold & Growth rate ](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarsSold&Growth.jpg?raw=true)
-
+<p align="center">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarsSold&Growth.jpg?raw=true" alt="YTD Cars Sold & Growth rate">
+</p>
 
 
 
@@ -175,7 +180,9 @@ where EXTRACT(YEAR FROM "Date") = 2021
 GROUP BY week
 order by week desc
 ```
-![YTD Sales Weekly Trends with line chart](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDWeeklySalesTrends.jpg?raw=true)
+<p align="center">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDWeeklySalesTrends.jpg?raw=true" alt="YTD Sales Weekly Trends with line chart">
+</p>
 
 
 
@@ -188,9 +195,9 @@ GROUP BY "Body Style"
 order by total_sales desc
 
 ```
-![YTD Total Sales by body style](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSalesbyBodyStyle.jpg?raw=true)
-
-
+<p align="center">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSalesbyBodyStyle.jpg?raw=true" alt="YTD Total Sales by body style">
+</p>
 
 3.	YTD Total Sales by Color: Present the contribution of various car colors to the YTD total sales through a donut chart.
 ```sql
@@ -200,8 +207,9 @@ where EXTRACT(YEAR FROM "Date") = 2021
 GROUP BY "Color"
 order by total_sales desc
 ```
-![YTD Total Sales by color](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSalesbyColor.jpg?raw=true)
-
+<p align="center">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSalesbyColor.jpg?raw=true" alt="YTD Total Sales by color">
+</p>
 
 4.	YTD Cars Sold by Dealer Region: Showcase the YTD sales data based on different dealer regions using a bar chart to visualize the sales distribution geographically.
 ```sql
@@ -211,7 +219,10 @@ where EXTRACT(YEAR FROM "Date") = 2021
 GROUP BY "Dealer_Region"
 order by total_sales desc
 ```
-![YTD Total Sales by color](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarSoldbyDealerRegion.jpg?raw=true)
+<p align="center">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarSoldbyDealerRegion.jpg?raw=true" alt="YTD Total Sales by dealer region">
+</p>
+
 
 
 5.	Company-Wise Sales Trend in Grid Form: Provide a tabular grid that displays the sales trend for each company. The grid should showcase the company name along with their YTD sales figures.
