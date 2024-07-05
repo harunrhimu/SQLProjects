@@ -50,7 +50,7 @@ WHERE
 ```
 [{{(Here is Image and query description)}}]
 
-![Year-to-Date (YTD) Total Sales](SQLProjects/Car_Sales_Projects/assets/YTDAvgPrice&Growth.jpg)
+![Year-to-Date (YTD) Total Sales](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDAvgPrice&Growth%20.jpg?raw=true)
 
 •	Year-over-Year (YOY) Growth in Total Sales
 ```sql
