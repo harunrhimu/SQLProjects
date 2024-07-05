@@ -50,7 +50,7 @@ WHERE
 ```
 [{{(Here is Image and query description)}}]
 
-![Year-to-Date (YTD) Total Sales](SQLProjects/Car_Sales_Projects/assets/YTDAvgPrice&Growth .jpg)
+![Year-to-Date (YTD) Total Sales](SQLProjects/Car_Sales_Projects/assets/YTDAvgPrice&Growth.jpg)
 
 •	Year-over-Year (YOY) Growth in Total Sales
 ```sql
@@ -64,6 +64,7 @@ WHERE
 [{{(Here is Image and query description)}}]
 
 ![Year-over-Year (YOY) Growth in Total Sales](assets/YTDTotalSales&Growth.jpg)
+![I am seeking opportunity as a Data Analyst](https://cdn.sanity.io/images/tlr8oxjg/production/22c3b048689e6b8cd048157c7eb3c01cce769a41-1456x816.png?w=3840&q=80&fit=clip&auto=format)
 
 
 # 2.	Average Price Analysis:
