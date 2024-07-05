@@ -65,8 +65,7 @@ WHERE
 
 ![Year-over-Year (YOY) Growth in Total Sales](assets/YTDTotalSales&Growth.jpg)
 ![I am seeking opportunity as a Data Analyst](https://cdn.sanity.io/images/tlr8oxjg/production/22c3b048689e6b8cd048157c7eb3c01cce769a41-1456x816.png?w=3840&q=80&fit=clip&auto=format)
-
-
+![Year-over-Year (YOY) Growth in Total Sales](I:/Data Analyst/04_python_essential_learning/JupyterNotebook/SQLProjects/Car_Sales_Projects/assets/YTDTotalSales&Growth.jpg)
 # 2.	Average Price Analysis:
 •	YTD Average Price
 ```sql
