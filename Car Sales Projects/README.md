@@ -63,7 +63,9 @@ WHERE
 ```
 [{{(Here is Image and query description)}}]
 
-![Year-over-Year (YOY) Growth in Total Sales](assets/1_top_paying_roles.png)
+![Year-over-Year (YOY) Growth in Total Sales](I:\Data Analyst\04_python_essential_learning\JupyterNotebook\SQLProjects\Car Sales Projects\YTD Avg Price & Growth .jpg)
+*Explain after images. This barh is generated from raw files in Tableau Public Application*
+
 
 # 2.	Average Price Analysis:
 •	YTD Average Price
