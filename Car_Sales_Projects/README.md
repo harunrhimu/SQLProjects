@@ -163,6 +163,7 @@ FROM
     YTD_Cars, 
     PYTD_cars;
 ```
+
 <p align="center">
   <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarsSold&Growth.jpg?raw=true" alt="YTD Cars Sold & Growth rate">
 </p>
