@@ -63,7 +63,7 @@ WHERE
 ```
 [{{(Here is Image and query description)}}]
 
-![Year-over-Year (YOY) Growth in Total Sales](SQLProjects/Car_Sales_Projects/YTDTotalSales&Growth.jpg)
+![Year-over-Year (YOY) Growth in Total Sales](assets/YTDTotalSales&Growth.jpg)
 *Explain after images. This barh is generated from raw files in Tableau Public Application*
 SQLProjects\Car Sales Projects\YTD Avg Price & Growth .jpg
 
