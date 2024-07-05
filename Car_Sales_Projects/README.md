@@ -164,7 +164,6 @@ FROM
 
 
 
-
 # Problem Statement 2: Charts Requirement
 
 1.	YTD Sales Weekly Trend: Display a line chart illustrating the weekly trend of YTD sales. The X-axis should represent weeks, and the Y-axis should show the total sales amount.
@@ -176,6 +175,10 @@ where EXTRACT(YEAR FROM "Date") = 2021
 GROUP BY week
 order by week desc
 ```
+![YTD Sales Weekly Trends with line chart](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDWeeklySalesTrends.jpg?raw=true)
+
+
+
 2.	YTD Total Sales by Body Style: Visualize the distribution of YTD total sales across different car body styles using a Pie chart.
 ```sql
 SELECT  "Body Style", sum("Price") as total_sales
@@ -184,8 +187,9 @@ where EXTRACT(YEAR FROM "Date") = 2021
 GROUP BY "Body Style"
 order by total_sales desc
 
-
 ```
+![YTD Total Sales by body style](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSalesbyBodyStyle.jpg?raw=true)
+
 
 
 3.	YTD Total Sales by Color: Present the contribution of various car colors to the YTD total sales through a donut chart.
@@ -196,6 +200,8 @@ where EXTRACT(YEAR FROM "Date") = 2021
 GROUP BY "Color"
 order by total_sales desc
 ```
+![YTD Total Sales by color](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSalesbyColor.jpg?raw=true)
+
 
 4.	YTD Cars Sold by Dealer Region: Showcase the YTD sales data based on different dealer regions using a bar chart to visualize the sales distribution geographically.
 ```sql
@@ -205,6 +211,8 @@ where EXTRACT(YEAR FROM "Date") = 2021
 GROUP BY "Dealer_Region"
 order by total_sales desc
 ```
+![YTD Total Sales by color](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarSoldbyDealerRegion.jpg?raw=true)
+
 
 5.	Company-Wise Sales Trend in Grid Form: Provide a tabular grid that displays the sales trend for each company. The grid should showcase the company name along with their YTD sales figures.
 ```sql
@@ -215,5 +223,6 @@ GROUP BY "Company"
 order by total_sales desc
 Limit 5
 ```
+![YTD Total Sales by color](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/CompanyWiseSalesTrends.jpg?raw=true)
 
 
