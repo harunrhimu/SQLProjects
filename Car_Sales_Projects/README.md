@@ -50,7 +50,6 @@ WHERE
 ```
 [{{(Here is Image and query description)}}]
 
-![Year-to-Date (YTD) Total Sales](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDAvgPrice&Growth%20.jpg?raw=true)
 
 •	Year-over-Year (YOY) Growth in Total Sales
 ```sql
@@ -61,11 +60,10 @@ FROM
 WHERE 
     EXTRACT(YEAR FROM "Date") = 2020;
 ```
-[{{(Here is Image and query description)}}]
 
-![Year-over-Year (YOY) Growth in Total Sales](assets/YTDTotalSales&Growth.jpg)
+![Year-over-Year (YOY) Total Sales & Growth in Total Sales](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSales&Growth%20.jpg?raw=true)
 
-![Year-over-Year (YOY) Growth in Total Sales](file:///I:/Data%20Analyst/04_python_essential_learning/JupyterNotebook/SQLProjects/Car_Sales_Projects/assets/YTDAvgPrice&Growth%20.jpg)
+
 # 2.	Average Price Analysis:
 •	YTD Average Price
 ```sql
