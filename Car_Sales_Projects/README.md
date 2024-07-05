@@ -89,9 +89,6 @@ WHERE
 SELECT YTD_SALES / Total_car_sold
 FROM YTD_SALESS, YTD_car_sold
 ```
-[{{(Here is Image and query description)}}]
-
-![Average Price Analysis](assets/1_top_paying_roles.png)
 
 •	YOY Growth in Average Price
 ```sql 
@@ -120,6 +117,8 @@ SELECT YTD_avg_price, PYTD_avg_SALES,
 (YTD_avg_price -PYTD_avg_SALES) /PYTD_avg_SALES as YOY_AVG_GROWTH
 FROM YTD_avg, PYTD_avg;
 ```
+![YTD average prica and growth](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDAvgPrice&Growth%20.jpg?raw=true)
+
 
 
 ## 3.	Cars Sold Metrics:
@@ -159,8 +158,11 @@ SELECT
 FROM 
     YTD_Cars, 
     PYTD_cars;
-
 ```
+![YTD Cars Sold & Growth rate ](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarsSold&Growth.jpg?raw=true)
+
+
+
 
 
 # Problem Statement 2: Charts Requirement
