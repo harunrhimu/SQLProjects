@@ -223,8 +223,8 @@ GROUP BY "Company"
 order by total_sales desc
 Limit 5
 ```
-![YTD Total Sales by color]( <p align="center">
+![YTD Total Sales by color]<p align="center">
   <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/CompanyWiseSalesTrends.jpg?raw=true" alt="YTD Total Sales by color">
-</p>)
+</p>
 
 
