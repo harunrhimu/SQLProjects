@@ -251,7 +251,7 @@ ORDER BY Total_Orders DESC
 Output:
 ```
 <p align="center">
-  <img src="  ">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Pizza_Sales_Projects/assets/Top5PizzabyOrders.jpg?raw=true">
 </p>
 •	 Bottom 5 Best Seller Pizza By Total Orders 
 ```sql
