@@ -1,4 +1,6 @@
 # CAR SALES DASHBOARD
+![Full Projects](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/Cars%20Sales%20Dahboard.jpg?raw=true)
+
 ## SQL Full Project with Tableau Dashboard
 # Background
 Our company is a car dealership that sells various car models. To effectively track and analyse our sales performance, we need a comprehensive Car Sales Dashboard in Tableau. 
