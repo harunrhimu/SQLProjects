@@ -96,7 +96,7 @@ SELECT SUM(quantity) AS Total_Pizza_Sold
 FROM pizza_sales
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Pizza_Sales_Projects/assets/PizzaSold.jpg?raw=true">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Pizza_Sales_Projects/assets/TotalPizzaSold.jpg?raw=true">
 </p>
 
 
@@ -254,6 +254,7 @@ Output:
   <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Pizza_Sales_Projects/assets/Top5PizzabyOrders.jpg?raw=true">
 </p>
 •	 Bottom 5 Best Seller Pizza By Total Orders 
+
 ```sql
 SELECT TOP 5 pizza_name, CAST(count(distinct order_id) AS DECIMAL (10,2)) AS Total_Orders
 FROM pizza_sales
@@ -261,7 +262,7 @@ GROUP BY pizza_name
 ORDER BY Total_Orders ASC --to figur out bottom 5 pizza
 ```
 <p align="center">
-  <img src=" ">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Pizza_Sales_Projects/assets/Bottom5PizzabyOrders.jpg?raw=true">
 </p>
 
 
