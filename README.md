@@ -122,7 +122,7 @@ SELECT YTD_avg_price, PYTD_avg_SALES,
 FROM YTD_avg, PYTD_avg;
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDAvgPrice&Growth%20.jpg?raw=true" alt="YTD average price and growth">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDAvgPrice&Growth%20.jpg?raw=true">
 </p>
 
 
@@ -167,7 +167,7 @@ FROM
 ```
 
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarsSold&Growth.jpg?raw=true" alt="YTD Cars Sold & Growth rate">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDCarsSold&Growth.jpg?raw=true">
 </p>
 
 
@@ -184,7 +184,7 @@ GROUP BY week
 order by week desc
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDWeeklySalesTrends.jpg?raw=true" alt="YTD Sales Weekly Trends with line chart">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDWeeklySalesTrends.jpg?raw=true">
 </p>
 
 
@@ -199,7 +199,7 @@ order by total_sales desc
 
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSalesbyBodyStyle.jpg?raw=true" alt="YTD Total Sales by body style">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDTotalSalesbyBodyStyle.jpg?raw=true">
 </p>
 
 3.	YTD Total Sales by Color: Present the contribution of various car colors to the YTD total sales through a donut chart.
@@ -211,7 +211,7 @@ GROUP BY "Color"
 order by total_sales desc
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSalesbyColor.jpg?raw=true" alt="YTD Total Sales by color">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDTotalSalesbyColor.jpg?raw=true">
 </p>
 
 4.	YTD Cars Sold by Dealer Region: Showcase the YTD sales data based on different dealer regions using a bar chart to visualize the sales distribution geographically.
@@ -223,7 +223,7 @@ GROUP BY "Dealer_Region"
 order by total_sales desc
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDCarSoldbyDealerRegion.jpg?raw=true" alt="YTD Total Sales by dealer region">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDCarSoldbyDealerRegion.jpg?raw=true">
 </p>
 
 
@@ -238,7 +238,7 @@ order by total_sales desc
 Limit 5
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/CompanyWiseSalesTrends.jpg?raw=true" alt="YTD Total Sales by color">
+  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/CompanyWiseSalesTrends.jpg?raw=true">
 </p>
 
 # Car Sales Dashboard Insights 
