@@ -1,5 +1,5 @@
 # CAR SALES DASHBOARD
-![Full Projects](https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/Cars%20Sales%20Dahboard.jpg?raw=true)
+![Full Projects](https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/Cars%20Sales%20Dahboard.jpg?raw=true)
 
 ## SQL Full Project with Tableau Dashboard
 # Background
@@ -64,7 +64,7 @@ WHERE
 ```
 
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/Car_Sales_Projects/assets/YTDTotalSales&Growth%20.jpg?raw=true" alt="Year-over-Year (YOY) Total Sales & Growth in Total Sales">
+  <img src="https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/assets/YTDTotalSales&Growth%20.jpg?raw=true" alt="Year-over-Year (YOY) Total Sales & Growth in Total Sales">
 </p>
 
 
@@ -122,7 +122,7 @@ SELECT YTD_avg_price, PYTD_avg_SALES,
 FROM YTD_avg, PYTD_avg;
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDAvgPrice&Growth%20.jpg?raw=true">
+  <img src="https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/assets/YTDAvgPrice&Growth%20.jpg?raw=true">
 </p>
 
 
@@ -167,7 +167,7 @@ FROM
 ```
 
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDCarsSold&Growth.jpg?raw=true">
+  <img src="https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/assets/YTDCarsSold&Growth.jpg?raw=true">
 </p>
 
 
@@ -184,7 +184,7 @@ GROUP BY week
 order by week desc
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDWeeklySalesTrends.jpg?raw=true">
+  <img src="https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/assets/YTDWeeklySalesTrends.jpg?raw=true">
 </p>
 
 
@@ -199,7 +199,7 @@ order by total_sales desc
 
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDTotalSalesbyBodyStyle.jpg?raw=true">
+  <img src="https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/assets/YTDTotalSalesbyBodyStyle.jpg?raw=true">
 </p>
 
 3.	YTD Total Sales by Color: Present the contribution of various car colors to the YTD total sales through a donut chart.
@@ -211,7 +211,7 @@ GROUP BY "Color"
 order by total_sales desc
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDTotalSalesbyColor.jpg?raw=true">
+  <img src="https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/assets/YTDTotalSalesbyColor.jpg?raw=true">
 </p>
 
 4.	YTD Cars Sold by Dealer Region: Showcase the YTD sales data based on different dealer regions using a bar chart to visualize the sales distribution geographically.
@@ -223,7 +223,7 @@ GROUP BY "Dealer_Region"
 order by total_sales desc
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/YTDCarSoldbyDealerRegion.jpg?raw=true">
+  <img src="https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/assets/YTDCarSoldbyDealerRegion.jpg?raw=true">
 </p>
 
 
@@ -238,7 +238,7 @@ order by total_sales desc
 Limit 5
 ```
 <p align="center">
-  <img src="https://github.com/harunrhimu/SQLProjects/blob/main/assets/CompanyWiseSalesTrends.jpg?raw=true">
+  <img src="https://github.com/harunrhimu/SQL_Car_SalesProject_With_GitHub_Visualization/blob/main/assets/CompanyWiseSalesTrends.jpg?raw=true">
 </p>
 
 # Car Sales Dashboard Insights 
